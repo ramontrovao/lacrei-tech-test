@@ -8,11 +8,23 @@ export const HeaderContainer = styled.header`
   align-items: center;
 
   background: ${({ theme: { COLORS } }) => COLORS.GRAY_200};
+
+  @media (max-width: 520px) {
+    padding: 0.5rem 1rem;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 export const NavContainer = styled.nav`
   display: flex;
   gap: 2.5rem;
+
+  @media (max-width: 520px) {
+    gap: 1rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -30,6 +42,10 @@ export const Link = styled.a`
 
     &:hover {
       color: ${COLORS.GREEN_500};
+    }
+
+    @media (max-width: 520px) {
+      font-size: ${FONT_SIZES.SM}rem;
     }
   `}
 `;

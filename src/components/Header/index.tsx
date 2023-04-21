@@ -8,7 +8,7 @@ export const Header = () => {
       <NavContainer>
         <Link href="">Home</Link>
 
-        <Link href="">Pessoa usuária</Link>
+        <Link href="">Pessoa Usuária</Link>
 
         <Link href="">Profissional</Link>
       </NavContainer>
