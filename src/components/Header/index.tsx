@@ -1,16 +1,37 @@
-import { HeaderContainer, Link, NavContainer, Title } from "./styles";
+import { HeaderContainer, NavContainer, Title } from "./styles";
 
-export const Header = () => {
+import { LinkAnchor } from "../LinkAnchor";
+
+interface IHeaderProps {
+  pageActive: "Home" | "Pessoa Usuária" | "Profissional";
+}
+
+export const Header = ({ pageActive }: IHeaderProps) => {
   return (
     <HeaderContainer>
       <Title>Lacrei</Title>
 
       <NavContainer>
-        <Link href="">Home</Link>
+        <LinkAnchor
+          variant="green"
+          isActive={pageActive === "Home"}
+          text="Home"
+          href="#"
+        />
 
-        <Link href="">Pessoa Usuária</Link>
+        <LinkAnchor
+          variant="green"
+          isActive={pageActive === "Pessoa Usuária"}
+          text="Pessoa Usuária"
+          href="#"
+        />
 
-        <Link href="">Profissional</Link>
+        <LinkAnchor
+          variant="green"
+          isActive={pageActive === "Profissional"}
+          text="Profissional"
+          href="#"
+        />
       </NavContainer>
     </HeaderContainer>
   );
