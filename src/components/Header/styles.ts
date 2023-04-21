@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   padding: 0.5rem 4rem;

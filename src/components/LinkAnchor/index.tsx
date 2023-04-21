@@ -3,7 +3,7 @@ import { LinkAnchorContainer } from "./styles";
 
 interface ILinkAnchorProps extends AnchorHTMLAttributes<HTMLElement> {
   text: string;
-  variant: "green" | "red";
+  variant: "green" | "gray";
   isActive: boolean;
 }
 

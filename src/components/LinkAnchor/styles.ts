@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 interface ILinkAnchorContainerStyledProps {
   isActive: boolean;
-  variant: "green" | "red";
+  variant: "green" | "gray";
 }
 
 export const LinkAnchorContainer = styled.a<ILinkAnchorContainerStyledProps>`
@@ -12,10 +12,10 @@ export const LinkAnchorContainer = styled.a<ILinkAnchorContainerStyledProps>`
           color: ${isActive ? COLORS.GREEN_500 : COLORS.GRAY_500};
         `
       : css`
-          font-weight: ${isActive ? 700 : 400};
+          color: ${COLORS.GRAY_500};
         `}
     font-size: ${FONT_SIZES.M}rem;
-    font-weight: 700;
+    font-weight: ${isActive ? 700 : 400};
     transition: 0.4s;
     text-decoration: none;
 

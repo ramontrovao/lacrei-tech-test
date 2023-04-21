@@ -1,5 +1,6 @@
 export const DefaultTheme = {
   COLORS: {
+    GREEN_100: "#B0E0D3",
     GREEN_500: "#018762",
 
     GRAY_100: "#FFFFFF",
