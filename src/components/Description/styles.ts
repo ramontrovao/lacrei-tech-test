@@ -14,5 +14,9 @@ export const DescriptionContainer = styled.h1<IDescriptionContainerContainerStyl
       border-left: 5px solid ${COLORS.GREEN_500};
       padding-left: 1rem;
     `};
+
+    @media (max-width: 425px) {
+      font-size: ${FONT_SIZES.M}rem;
+    }
   `}
 `;

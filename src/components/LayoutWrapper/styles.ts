@@ -27,5 +27,6 @@ export const LeftWrapperContainer = styled.div`
 export const RightWrapperContainer = styled.div`
   img {
     width: 100%;
+    max-height: 25rem;
   }
 `;

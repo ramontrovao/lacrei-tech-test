@@ -22,7 +22,7 @@ export const NavContainer = styled.nav`
   align-items: center;
 
   @media (max-width: 575px) {
-    gap: 1rem;
+    gap: 0.5rem;
 
     justify-content: center;
     align-items: center;
