@@ -11,11 +11,6 @@ export const HeaderContainer = styled.header`
 
   @media (max-width: 575px) {
     padding: 0.5rem 1rem;
-
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
   }
 `;
 
@@ -28,6 +23,10 @@ export const NavContainer = styled.nav`
 
   @media (max-width: 575px) {
     gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 `;
 
