@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 
-interface ILinkAnchorContainerStyledProps {
+interface ILinkAnchorContainerStyleProps {
   isActive: boolean;
   variant: "green" | "gray";
 }
 
-export const LinkAnchorContainer = styled.a<ILinkAnchorContainerStyledProps>`
+export const LinkAnchorContainer = styled.a<ILinkAnchorContainerStyleProps>`
   ${({ theme: { COLORS, FONT_SIZES }, variant, isActive }) => css`
     ${variant === "green"
       ? css`

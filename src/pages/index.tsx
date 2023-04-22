@@ -1,4 +1,11 @@
 import Head from "next/head";
+import Image from "next/image";
+
+import medicaSvg from "@assets/medica.svg";
+
+import { WrapperContainer } from "@components/LayoutWrapper/styles";
+import { Title } from "@components/Title";
+import { Description } from "@components/Description";
 
 export default function Home() {
   return (
@@ -9,7 +16,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/logo.png" />
       </Head>
-      <HomeContainer></HomeContainer>
+
+      <WrapperContainer>
+        <div>
+          <Title text="Boas vindas a Lacrei Saúde" />
+
+          <Description text="A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora." />
+        </div>
+
+        <div>
+          <Image src={medicaSvg} alt="" />
+        </div>
+      </WrapperContainer>
     </>
   );
 }

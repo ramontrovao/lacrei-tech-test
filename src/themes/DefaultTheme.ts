@@ -11,6 +11,8 @@ export const DefaultTheme = {
   FONT_SIZES: {
     SM: 0.85,
     M: 1,
+    XM: 1.5,
     L: 2,
+    XL: 3,
   },
 } as const;
