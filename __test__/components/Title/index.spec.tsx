@@ -14,6 +14,8 @@ describe("Describe title component", () => {
       </ThemeProvider>
     );
 
-    screen.getByText("This is a title test");
+    const titleElement = screen.getByRole("heading");
+
+    expect(titleElement.textContent).toBe("This is a title test");
   });
 });

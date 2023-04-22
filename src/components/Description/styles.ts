@@ -4,7 +4,7 @@ interface IDescriptionContainerContainerStyleProps {
   hasBar: boolean;
 }
 
-export const DescriptionContainer = styled.h1<IDescriptionContainerContainerStyleProps>`
+export const DescriptionContainer = styled.p<IDescriptionContainerContainerStyleProps>`
   ${({ theme: { COLORS, FONT_SIZES }, hasBar }) => css`
     color: ${COLORS.GRAY_300};
     font-size: ${FONT_SIZES.XM}rem;
