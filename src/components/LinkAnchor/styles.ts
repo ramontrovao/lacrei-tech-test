@@ -10,12 +10,13 @@ export const LinkAnchorContainer = styled.a<ILinkAnchorContainerStyledProps>`
     ${variant === "green"
       ? css`
           color: ${isActive ? COLORS.GREEN_500 : COLORS.GRAY_500};
+          font-weight: 700;
         `
       : css`
           color: ${COLORS.GRAY_500};
+          font-weight: ${isActive ? 700 : 400};
         `}
     font-size: ${FONT_SIZES.M}rem;
-    font-weight: ${isActive ? 700 : 400};
     transition: 0.4s;
     text-decoration: none;
 

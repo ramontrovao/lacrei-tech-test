@@ -20,15 +20,30 @@ export const HeaderContainer = styled.header`
 `;
 
 export const NavContainer = styled.nav`
+  width: 100%;
+
   display: flex;
-  gap: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
 
   @media (max-width: 575px) {
     gap: 1rem;
   }
 `;
 
-export const Title = styled.h1`
+export const NavRightWrapper = styled.div`
+  display: flex;
+  gap: 2.5rem;
+`;
+
+export const LacreiLogo = styled.a`
   color: ${({ theme: { COLORS } }) => COLORS.GREEN_500};
-  font-size: ${({ theme: { FONT_SIZES } }) => FONT_SIZES.L};
+  font-size: ${({ theme: { FONT_SIZES } }) => FONT_SIZES.L}rem;
+  font-weight: 700;
+  transition: 0.4s;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;

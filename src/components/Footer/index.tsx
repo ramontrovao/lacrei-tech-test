@@ -9,7 +9,7 @@ import { LinkAnchor } from "@components/LinkAnchor";
 import { FooterContainer, IconLink, NavContainer, SmallText } from "./styles";
 
 interface IFooterProps {
-  pageActive: "Home" | "Pessoa Usuária" | "Profissional";
+  pageActive: string;
 }
 
 export const Footer = ({ pageActive }: IFooterProps) => {
@@ -18,19 +18,19 @@ export const Footer = ({ pageActive }: IFooterProps) => {
       <NavContainer>
         <LinkAnchor
           text="Home"
-          isActive={pageActive === "Home"}
+          isActive={pageActive === "/"}
           variant="gray"
           href="#"
         />
         <LinkAnchor
           text="Pessoa Usuária"
-          isActive={pageActive === "Pessoa Usuária"}
+          isActive={pageActive === "/pessoa-usuaria"}
           variant="gray"
           href="#"
         />
         <LinkAnchor
           text="Profissional"
-          isActive={pageActive === "Profissional"}
+          isActive={pageActive === "/profissional"}
           variant="gray"
           href="#"
         />

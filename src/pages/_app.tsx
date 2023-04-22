@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 
 import { GlobalStyle } from "@styles/Global";
 import { DefaultTheme } from "@themes/DefaultTheme";
+import { DefaultLayout } from "@layouts/DefaultLayout";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -10,7 +11,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <GlobalStyle />
 
       <ThemeProvider theme={DefaultTheme}>
-        <Component {...pageProps} />
+        <DefaultLayout>
+          <Component {...pageProps} />
+        </DefaultLayout>
       </ThemeProvider>
     </>
   );
