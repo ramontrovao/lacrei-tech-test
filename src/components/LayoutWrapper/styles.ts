@@ -28,6 +28,10 @@ export const LeftWrapperContainer = styled.div`
 `;
 
 export const RightWrapperContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
     width: 100%;
     max-height: 25rem;

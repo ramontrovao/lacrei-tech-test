@@ -15,6 +15,7 @@ export const LinkButtonAnchorContainer = styled.a<ILinkButtonAnchorContainerStyl
     text-align: center;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    transition: 0.4s;
 
     ${variant === "fill" &&
     css`
@@ -28,5 +29,9 @@ export const LinkButtonAnchorContainer = styled.a<ILinkButtonAnchorContainerStyl
       color: ${COLORS.GREEN_500};
       border: 2px solid ${COLORS.GREEN_500};
     `}
+
+    &:hover {
+      opacity: 0.75;
+    }
   `}
 `;
