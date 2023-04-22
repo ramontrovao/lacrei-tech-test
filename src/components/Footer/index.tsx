@@ -6,7 +6,7 @@ import linkedinLogo from "@assets/linkedin-logo.svg";
 
 import { LinkAnchor } from "@components/LinkAnchor";
 
-import { FooterContainer, IconLink, NavContainer, SmallText } from "./styles";
+import * as S from "./styles";
 
 interface IFooterProps {
   pageActive: string;
@@ -14,8 +14,8 @@ interface IFooterProps {
 
 export const Footer = ({ pageActive }: IFooterProps) => {
   return (
-    <FooterContainer>
-      <NavContainer>
+    <S.FooterContainer>
+      <S.NavContainer>
         <LinkAnchor
           text="Home"
           isActive={pageActive === "/"}
@@ -34,23 +34,23 @@ export const Footer = ({ pageActive }: IFooterProps) => {
           variant="gray"
           href="/profissional"
         />
-      </NavContainer>
+      </S.NavContainer>
 
-      <NavContainer>
-        <IconLink href="/">
+      <S.NavContainer>
+        <S.IconLink href="/">
           <Image src={facebookLogo} alt="" />
-        </IconLink>
+        </S.IconLink>
 
-        <IconLink href="/">
+        <S.IconLink href="/">
           <Image src={instagramLogo} alt="" />
-        </IconLink>
+        </S.IconLink>
 
-        <IconLink href="/">
+        <S.IconLink href="/">
           <Image src={linkedinLogo} alt="" />
-        </IconLink>
-      </NavContainer>
+        </S.IconLink>
+      </S.NavContainer>
 
-      <SmallText>Desafio Front-end Lacrei</SmallText>
-    </FooterContainer>
+      <S.SmallText>Desafio Front-end Lacrei</S.SmallText>
+    </S.FooterContainer>
   );
 };

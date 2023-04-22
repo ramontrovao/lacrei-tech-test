@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
+import { useRouter } from "next/router";
+
 import { Footer } from "@components/Footer";
 import { Header } from "@components/Header";
-import { useRouter } from "next/router";
-import { ReactNode } from "react";
 
 interface IDefaultLayoutProps {
   children: ReactNode;

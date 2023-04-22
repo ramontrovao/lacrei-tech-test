@@ -1,4 +1,4 @@
-import { DescriptionContainer } from "./styles";
+import * as S from "./styles";
 
 interface IDescriptionContainerProps {
   text: string;
@@ -9,5 +9,7 @@ export const Description = ({
   text,
   hasBar = false,
 }: IDescriptionContainerProps) => {
-  return <DescriptionContainer hasBar={hasBar}>{text}</DescriptionContainer>;
+  return (
+    <S.DescriptionContainer hasBar={hasBar}>{text}</S.DescriptionContainer>
+  );
 };

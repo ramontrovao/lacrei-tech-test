@@ -1,5 +1,6 @@
 import { AnchorHTMLAttributes } from "react";
-import { LinkAnchorContainer } from "./styles";
+
+import * as S from "./styles";
 
 interface ILinkAnchorProps extends AnchorHTMLAttributes<HTMLElement> {
   text: string;
@@ -14,8 +15,8 @@ export const LinkAnchor = ({
   ...rest
 }: ILinkAnchorProps) => {
   return (
-    <LinkAnchorContainer isActive={isActive} variant={variant} {...rest}>
+    <S.LinkAnchorContainer isActive={isActive} variant={variant} {...rest}>
       {text}
-    </LinkAnchorContainer>
+    </S.LinkAnchorContainer>
   );
 };

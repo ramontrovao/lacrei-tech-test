@@ -1,9 +1,4 @@
-import {
-  HeaderContainer,
-  NavContainer,
-  LacreiLogo,
-  NavRightWrapper,
-} from "./styles";
+import * as S from "./styles";
 
 import { LinkAnchor } from "../LinkAnchor";
 
@@ -13,11 +8,11 @@ interface IHeaderProps {
 
 export const Header = ({ pageActive }: IHeaderProps) => {
   return (
-    <HeaderContainer>
-      <NavContainer>
-        <LacreiLogo href="/">Lacrei</LacreiLogo>
+    <S.HeaderContainer>
+      <S.NavContainer>
+        <S.LacreiLogo href="/">Lacrei</S.LacreiLogo>
 
-        <NavRightWrapper>
+        <S.NavRightWrapper>
           <LinkAnchor
             variant="green"
             isActive={pageActive === "/"}
@@ -38,8 +33,8 @@ export const Header = ({ pageActive }: IHeaderProps) => {
             text="Profissional"
             href="/profissional"
           />
-        </NavRightWrapper>
-      </NavContainer>
-    </HeaderContainer>
+        </S.NavRightWrapper>
+      </S.NavContainer>
+    </S.HeaderContainer>
   );
 };

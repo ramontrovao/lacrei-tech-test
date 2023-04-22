@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import medicaSvg from "@assets/medica.svg";
 
+import * as S from "@styles/Home";
+
 import {
   LeftWrapperContainer,
   RightWrapperContainer,
@@ -10,7 +12,6 @@ import {
 } from "@components/LayoutWrapper/styles";
 import { Title } from "@components/Title";
 import { Description } from "@components/Description";
-import { ButtonWrapper } from "@styles/Home";
 import { LinkButtonAnchor } from "@components/LinkButtonAnchor";
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
 
           <Description text="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+" />
 
-          <ButtonWrapper>
+          <S.ButtonWrapper>
             <LinkButtonAnchor
               text="Pessoa Usuária"
               variant="fill"
@@ -40,7 +41,7 @@ export default function Home() {
               variant="outline"
               href="/profissional"
             />
-          </ButtonWrapper>
+          </S.ButtonWrapper>
         </LeftWrapperContainer>
 
         <RightWrapperContainer>
