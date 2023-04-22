@@ -7,6 +7,9 @@ export const DefaultTheme = {
     GRAY_200: "#EEEEEE",
     GRAY_300: "#515151",
     GRAY_500: "#1F1F1F",
+
+    WHITE: "#FFF",
+    BLACK: "#000",
   },
   FONT_SIZES: {
     SM: 0.85,

@@ -10,6 +10,8 @@ import {
 } from "@components/LayoutWrapper/styles";
 import { Title } from "@components/Title";
 import { Description } from "@components/Description";
+import { ButtonWrapper } from "@styles/Home";
+import { LinkButtonAnchor } from "@components/LinkButtonAnchor";
 
 export default function Home() {
   return (
@@ -26,6 +28,11 @@ export default function Home() {
           <Title text="Boas vindas a Lacrei Saúde" />
 
           <Description text="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+" />
+
+          <ButtonWrapper>
+            <LinkButtonAnchor text="Pessoa Usuária" variant="fill" />
+            <LinkButtonAnchor text="Profissional" variant="outline" />
+          </ButtonWrapper>
         </LeftWrapperContainer>
 
         <RightWrapperContainer>
