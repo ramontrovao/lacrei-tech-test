@@ -10,6 +10,8 @@ export const Description = ({
   hasBar = false,
 }: IDescriptionContainerProps) => {
   return (
-    <S.DescriptionContainer hasBar={hasBar}>{text}</S.DescriptionContainer>
+    <S.DescriptionContainer role="description" hasBar={hasBar}>
+      {text}
+    </S.DescriptionContainer>
   );
 };

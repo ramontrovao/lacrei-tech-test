@@ -2,17 +2,17 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 
-import { Title } from "./";
+import { Description } from "./";
 import { DefaultTheme } from "@themes/DefaultTheme";
 
-describe("<Title>", () => {
-  it("should be able to render title component", () => {
+describe("<Description>", () => {
+  it("should be able to render description component", () => {
     render(
       <ThemeProvider theme={DefaultTheme}>
-        <Title text="This is a title test" />
+        <Description text="This is a description test" />
       </ThemeProvider>
     );
 
-    screen.getByText("This is a title test");
+    screen.getByText("This is a description test");
   });
 });
