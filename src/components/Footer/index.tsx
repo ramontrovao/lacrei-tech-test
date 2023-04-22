@@ -20,32 +20,32 @@ export const Footer = ({ pageActive }: IFooterProps) => {
           text="Home"
           isActive={pageActive === "/"}
           variant="gray"
-          href="#"
+          href="/"
         />
         <LinkAnchor
           text="Pessoa Usuária"
           isActive={pageActive === "/pessoa-usuaria"}
           variant="gray"
-          href="#"
+          href="/pessoa-usuaria"
         />
         <LinkAnchor
           text="Profissional"
           isActive={pageActive === "/profissional"}
           variant="gray"
-          href="#"
+          href="/profissional"
         />
       </NavContainer>
 
       <NavContainer>
-        <IconLink href="#">
+        <IconLink href="/">
           <Image src={facebookLogo} alt="" />
         </IconLink>
 
-        <IconLink href="#">
+        <IconLink href="/">
           <Image src={instagramLogo} alt="" />
         </IconLink>
 
-        <IconLink href="#">
+        <IconLink href="/">
           <Image src={linkedinLogo} alt="" />
         </IconLink>
       </NavContainer>

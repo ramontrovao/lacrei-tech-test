@@ -15,28 +15,28 @@ export const Header = ({ pageActive }: IHeaderProps) => {
   return (
     <HeaderContainer>
       <NavContainer>
-        <LacreiLogo href="#">Lacrei</LacreiLogo>
+        <LacreiLogo href="/">Lacrei</LacreiLogo>
 
         <NavRightWrapper>
           <LinkAnchor
             variant="green"
             isActive={pageActive === "/"}
             text="Home"
-            href="#"
+            href="/"
           />
 
           <LinkAnchor
             variant="green"
             isActive={pageActive === "/pessoa-usuaria"}
             text="Pessoa Usuária"
-            href="#"
+            href="/pessoa-usuaria"
           />
 
           <LinkAnchor
             variant="green"
             isActive={pageActive === "/profissional"}
             text="Profissional"
-            href="#"
+            href="/profissional"
           />
         </NavRightWrapper>
       </NavContainer>

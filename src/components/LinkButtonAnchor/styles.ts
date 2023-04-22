@@ -14,6 +14,7 @@ export const LinkButtonAnchorContainer = styled.a<ILinkButtonAnchorContainerStyl
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
 
     ${variant === "fill" &&
     css`

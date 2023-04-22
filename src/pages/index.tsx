@@ -30,8 +30,16 @@ export default function Home() {
           <Description text="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+" />
 
           <ButtonWrapper>
-            <LinkButtonAnchor text="Pessoa Usuária" variant="fill" />
-            <LinkButtonAnchor text="Profissional" variant="outline" />
+            <LinkButtonAnchor
+              text="Pessoa Usuária"
+              variant="fill"
+              href="/pessoa-usuaria"
+            />
+            <LinkButtonAnchor
+              text="Profissional"
+              variant="outline"
+              href="/profissional"
+            />
           </ButtonWrapper>
         </LeftWrapperContainer>
 
