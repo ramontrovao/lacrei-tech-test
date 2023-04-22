@@ -1,6 +1,3 @@
-import { Footer } from "@components/Footer";
-import { Header } from "@components/Header";
-import { HomeContainer } from "@styles/Home";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,12 +9,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/logo.png" />
       </Head>
-
-      <Header pageActive="Home" />
-
       <HomeContainer></HomeContainer>
-
-      <Footer pageActive="Home" />
     </>
   );
 }
