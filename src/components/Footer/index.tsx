@@ -37,15 +37,15 @@ export const Footer = ({ pageActive = "/" }: IFooterProps) => {
       </S.NavContainer>
 
       <S.NavContainer>
-        <S.IconLink href="/">
+        <S.IconLink href="/" title="Facebook">
           <Image src={facebookLogo} alt="" />
         </S.IconLink>
 
-        <S.IconLink href="/">
+        <S.IconLink href="/" title="Instagram">
           <Image src={instagramLogo} alt="" />
         </S.IconLink>
 
-        <S.IconLink href="/">
+        <S.IconLink href="/" title="LinkedIn">
           <Image src={linkedinLogo} alt="" />
         </S.IconLink>
       </S.NavContainer>
