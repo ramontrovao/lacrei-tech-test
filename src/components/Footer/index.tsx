@@ -12,7 +12,7 @@ interface IFooterProps {
   pageActive: string;
 }
 
-export const Footer = ({ pageActive }: IFooterProps) => {
+export const Footer = ({ pageActive = "/" }: IFooterProps) => {
   return (
     <S.FooterContainer>
       <S.NavContainer>
