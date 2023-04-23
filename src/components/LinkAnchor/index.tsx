@@ -4,8 +4,8 @@ import * as S from "./styles";
 
 interface ILinkAnchorProps extends AnchorHTMLAttributes<HTMLElement> {
   text: string;
-  variant: "green" | "gray";
-  isActive: boolean;
+  variant?: "green" | "gray";
+  isActive?: boolean;
 }
 
 export const LinkAnchor = ({

@@ -16,6 +16,6 @@ describe("Describe title component", () => {
 
     const titleElement = screen.getByRole("heading");
 
-    expect(titleElement.textContent).toBe("This is a title test");
+    expect(titleElement).toHaveTextContent("This is a title test");
   });
 });

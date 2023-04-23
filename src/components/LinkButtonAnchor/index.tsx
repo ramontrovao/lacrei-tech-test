@@ -3,12 +3,12 @@ import { LinkButtonAnchorContainer } from "./styles";
 
 interface ILinkButtonAnchor extends AnchorHTMLAttributes<HTMLElement> {
   text: string;
-  variant: "fill" | "outline";
+  variant?: "fill" | "outline";
 }
 
 export const LinkButtonAnchor = ({
   text,
-  variant,
+  variant = "fill",
   ...rest
 }: ILinkButtonAnchor) => {
   return (
