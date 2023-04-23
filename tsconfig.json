@@ -22,7 +22,6 @@
       "@themes/*": ["./src/themes/*"],
       "@assets/*": ["./public/assets/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@tests/*": ["./src/layouts/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.config.mjs", "jest-setup.mts"],
