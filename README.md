@@ -53,6 +53,15 @@ Isso irá executar os testes automatizados utilizando o Jest e o React Testing L
 
 #
 
+## Tecnologias Utilizadas
+
+- Typescript
+- NextJS
+- Jest
+- Styled-components
+- React Testing Library
+
+#
 ## Autor
 
 - Nome: Ramon Pinheiro
